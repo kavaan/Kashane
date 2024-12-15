@@ -1,0 +1,31 @@
+Neighborhood,Area,Rooms,YearBuilt,Floors,FloorNumber,Elevator,Parking,PropertyType,DocumentType,NearCenters,RenovationStatus,FlooringType,FacadeType,ExtraAmenities,Price
+امیرکبیر,100,2,1400,1,1,Yes,Yes,Apartment,SingleDeed,School,New,Ceramic,Brick,None,3120000000
+حمزه‌کلا,85,1,1395,4,2,No,No,Apartment,Agreement,ShoppingCenter,Old,Parquet,Stone,Pool,2431000000
+کمربندی غربی,200,4,1388,2,1,No,Yes,Villa,FullOwnership,Hospital,Renovated,Stone,Brick,Jacuzzi,10919999998
+میدان کشوری,150,3,1392,3,2,Yes,No,Apartment,SingleDeed,BusStation,New,Ceramic,Stone,None,5070000000
+شریعتی,110,2,1401,5,3,Yes,Yes,Apartment,SingleDeed,Park,New,Carpet,Cement,Sauna,3432000000
+قارن,95,2,1390,3,1,No,Yes,Apartment,Agreement,School,Old,Parquet,Stone,None,2964000000
+درب دلاکان,120,3,1385,2,2,Yes,No,Apartment,SingleDeed,Market,New,Stone,Brick,None,4056000000
+چهارراه نواب,130,3,1398,4,3,Yes,Yes,Apartment,SingleDeed,MainStreet,Renovated,Carpet,Cement,Pool,4394000000
+کمربندی شرقی,170,4,1393,1,1,No,Yes,Villa,FullOwnership,Hospital,Old,Ceramic,Stone,Sauna,9282000000
+کوی شهید بهشتی,105,2,1397,5,4,Yes,No,Apartment,Agreement,Park,New,Parquet,Brick,Jacuzzi,3276000000
+امیرکبیر,90,2,1398,1,1,Yes,Yes,Apartment,SingleDeed,School,New,Ceramic,Brick,None,2160000000
+حمزه‌کلا,120,3,1395,2,2,No,Yes,Villa,Agreement,ShoppingCenter,Old,Parquet,Stone,Pool,4680000000
+کمربندی غربی,150,4,1400,3,3,Yes,No,Apartment,FullOwnership,Hospital,Renovated,Stone,Cement,Jacuzzi,4199999999
+میدان کشوری,200,5,1380,4,1,Yes,Yes,Villa,SingleDeed,BusStation,New,Carpet,Brick,Sauna,7826086956
+شریعتی,85,1,1385,5,2,No,No,Apartment,Agreement,Park,Old,Ceramic,Stone,None,1870000000
+قارن,100,2,1390,2,1,No,Yes,Apartment,SingleDeed,Market,Renovated,Parquet,Cement,Pool,2400000000
+درب دلاکان,110,2,1392,1,3,Yes,No,Villa,FullOwnership,MainStreet,New,Stone,Brick,Jacuzzi,3960000000
+چهارراه نواب,95,3,1397,3,2,No,Yes,Apartment,Agreement,School,Old,Carpet,Stone,Sauna,2470000000
+کمربندی شرقی,170,4,1388,4,4,Yes,No,Villa,SingleDeed,Park,Renovated,Ceramic,Cement,None,7140000000
+کوی شهید بهشتی,130,3,1399,2,2,Yes,Yes,Apartment,FullOwnership,Market,New,Parquet,Brick,Pool,3380000000
+گلستان,180,5,1401,1,1,No,Yes,Apartment,SingleDeed,BusStation,Old,Stone,Stone,Jacuzzi,5400000000
+سردار جنگل,160,4,1375,5,5,Yes,No,Villa,Agreement,Hospital,Renovated,Carpet,Cement,Sauna,4799999999
+شهباز,140,3,1382,3,3,No,Yes,Apartment,FullOwnership,ShoppingCenter,New,Ceramic,Brick,None,3466666666
+امام حسین,125,2,1387,4,4,Yes,No,Villa,SingleDeed,MainStreet,Old,Parquet,Stone,Pool,4500000000
+فردوسی,105,2,1393,2,2,No,Yes,Apartment,Agreement,School,Renovated,Stone,Cement,Jacuzzi,2520000000
+کارگر,115,3,1396,1,1,Yes,No,Villa,SingleDeed,Hospital,New,Carpet,Brick,Sauna,4485000000
+مطهری,135,4,1402,3,3,No,Yes,Apartment,FullOwnership,Park,Old,Ceramic,Stone,None,3779999999
+شهید چمران,155,5,1389,4,4,Yes,No,Apartment,Agreement,Market,Renovated,Parquet,Cement,Pool,4650000000
+بهادر,175,4,1394,2,2,No,Yes,Villa,SingleDeed,MainStreet,New,Stone,Brick,Jacuzzi,7350000000
+بلوار شهید صادقی,190,3,1378,5,5,Yes,No,Apartment,FullOwnership,School,Old,Carpet,Stone,Sauna,3952000000
