@@ -4,18 +4,136 @@ Neighborhood,Area,Rooms,YearBuilt,Floors,FloorNumber,Elevator,Parking,PropertyTy
 کمربندی غربی,200,4,1388,2,1,No,Yes,Villa,FullOwnership,Hospital,Renovated,Stone,Brick,Jacuzzi,10919999998
 میدان کشوری,150,3,1392,3,2,Yes,No,Apartment,SingleDeed,BusStation,New,Ceramic,Stone,None,5070000000
 شریعتی,110,2,1401,5,3,Yes,Yes,Apartment,SingleDeed,Park,New,Carpet,Cement,Sauna,3432000000
-قارن,95,2,1390,3,1,No,Yes,Apartment,Agreement,School,Old,Parquet,Stone,None,2964000000
-درب دلاکان,120,3,1385,2,2,Yes,No,Apartment,SingleDeed,Market,New,Stone,Brick,None,4056000000
 چهارراه نواب,130,3,1398,4,3,Yes,Yes,Apartment,SingleDeed,MainStreet,Renovated,Carpet,Cement,Pool,4394000000
 کمربندی شرقی,170,4,1393,1,1,No,Yes,Villa,FullOwnership,Hospital,Old,Ceramic,Stone,Sauna,9282000000
-کوی شهید بهشتی,105,2,1397,5,4,Yes,No,Apartment,Agreement,Park,New,Parquet,Brick,Jacuzzi,3276000000
-گلستان,180,5,1401,1,1,No,Yes,Apartment,SingleDeed,BusStation,Old,Stone,Stone,Jacuzzi,5400000000
-سردار جنگل,160,4,1375,5,5,Yes,No,Villa,Agreement,Hospital,Renovated,Carpet,Cement,Sauna,4799999999
-شهباز,140,3,1382,3,3,No,Yes,Apartment,FullOwnership,ShoppingCenter,New,Ceramic,Brick,None,3466666666
-امام حسین,125,2,1387,4,4,Yes,No,Villa,SingleDeed,MainStreet,Old,Parquet,Stone,Pool,4500000000
-فردوسی,105,2,1393,2,2,No,Yes,Apartment,Agreement,School,Renovated,Stone,Cement,Jacuzzi,2520000000
-کارگر,115,3,1396,1,1,Yes,No,Villa,SingleDeed,Hospital,New,Carpet,Brick,Sauna,4485000000
-مطهری,135,4,1402,3,3,No,Yes,Apartment,FullOwnership,Park,Old,Ceramic,Stone,None,3779999999
-شهید چمران,155,5,1389,4,4,Yes,No,Apartment,Agreement,Market,Renovated,Parquet,Cement,Pool,4650000000
-بهادر,175,4,1394,2,2,No,Yes,Villa,SingleDeed,MainStreet,New,Stone,Brick,Jacuzzi,7350000000
-بلوار شهید صادقی,190,3,1378,5,5,Yes,No,Apartment,FullOwnership,School,Old,Carpet,Stone,Sauna,3952000000
+امیرکبیر,75,2,1402,1,1,Yes,Yes,Apartment,SingleDeed,School,New,Ceramic,Brick,None,2750000000
+حمزه‌کلا,90,2,1392,4,2,No,Yes,Apartment,Agreement,ShoppingCenter,Old,Parquet,Stone,Pool,2700000000
+کمربندی غربی,95,3,1403,3,2,Yes,No,Apartment,FullOwnership,Hospital,New,Ceramic,Stone,None,3700000000
+میدان کشوری,70,2,1388,2,1,No,No,Apartment,SingleDeed,BusStation,Old,Stone,Brick,None,1180000000
+شریعتی,182,3,1395,4,3,Yes,Yes,Apartment,FullOwnership,Park,Renovated,Carpet,Stone,Jacuzzi,7500000000
+چهارراه نواب,130,3,1398,4,3,Yes,Yes,Apartment,SingleDeed,MainStreet,Renovated,Parquet,Cement,Pool,4394000000
+کمربندی شرقی,80,2,1390,3,2,No,Yes,Apartment,Agreement,Hospital,Old,Parquet,Stone,None,2000000000
+موزیرج,270,4,1403,2,1,Yes,Yes,Villa,FullOwnership,Park,New,Stone,Brick,Sauna,8500000000
+امیرکبیر,85,2,1398,1,1,Yes,Yes,Apartment,SingleDeed,School,New,Ceramic,Brick,None,2900000000
+کمربندی غربی,155,3,1393,2,1,Yes,Yes,Villa,SingleDeed,Hospital,Renovated,Stone,Brick,Jacuzzi,5500000000
+میدان کشوری,115,2,1399,5,2,No,Yes,Apartment,Agreement,BusStation,New,Ceramic,Stone,Pool,3500000000
+حمزه‌کلا,120,3,1400,4,3,Yes,No,Villa,FullOwnership,ShoppingCenter,New,Parquet,Cement,Jacuzzi,4680000000
+چهارراه نواب,145,4,1402,3,2,Yes,Yes,Apartment,SingleDeed,MainStreet,New,Stone,Brick,Sauna,5200000000
+کمربندی شرقی,170,4,1388,4,4,Yes,No,Villa,SingleDeed,Park,Renovated,Ceramic,Cement,None,7140000000
+موزیرج,190,3,1378,5,5,Yes,No,Apartment,FullOwnership,School,Old,Carpet,Stone,Sauna,3952000000
+موزیرج,85,2,1398,1,1,Yes,Yes,Apartment,SingleDeed,School,New,Ceramic,Brick,None,2900000000
+موزیرج,100,3,1390,2,1,No,Yes,Apartment,Agreement,ShoppingCenter,Old,Parquet,Stone,None,2200000000
+موزیرج,120,3,1400,3,2,Yes,No,Villa,FullOwnership,Hospital,New,Stone,Brick,Pool,4500000000
+موزیرج,90,2,1385,1,1,No,No,Apartment,SingleDeed,BusStation,Old,Carpet,Cement,None,1800000000
+موزیرج,150,4,1395,2,1,Yes,Yes,Villa,FullOwnership,Park,Renovated,Ceramic,Stone,Jacuzzi,5500000000
+موزیرج,75,1,1402,1,1,No,No,Apartment,Agreement,MainStreet,New,Parquet,Brick,None,2000000000
+موزیرج,200,5,1380,3,2,Yes,Yes,Villa,SingleDeed,Market,Old,Stone,Cement,Sauna,6000000000
+موزیرج,110,2,1392,2,1,No,Yes,Apartment,Agreement,School,Renovated,Carpet,Stone,Pool,3200000000
+موزیرج,180,4,1401,3,2,Yes,No,Villa,FullOwnership,Hospital,New,Ceramic,Brick,Jacuzzi,5800000000
+موزیرج,95,2,1396,1,1,Yes,No,Apartment,SingleDeed,ShoppingCenter,New,Parquet,Cement,None,2500000000
+امیرکبیر,80,2,1397,5,3,Yes,Yes,Apartment,SingleDeed,School,New,Ceramic,Brick,None,2480000000
+امیرکبیر,180,3,1400,6,5,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,RooftopGarden,8500000000
+امیرکبیر,75,2,1395,4,2,Yes,Yes,Apartment,SingleDeed,Park,New,Ceramic,Brick,None,2750000000
+امیرکبیر,140,3,1403,5,4,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,6400000000
+امیرکبیر,70,2,1394,5,2,Yes,Yes,Apartment,SingleDeed,School,New,Ceramic,Brick,None,2200000000
+امیرکبیر,75,2,1388,5,2,Yes,Yes,Apartment,SingleDeed,School,New,Ceramic,Brick,None,2300000000
+امیرکبیر,165,3,1401,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,8700000000
+امیرکبیر,78,3,1393,5,2,Yes,Yes,Apartment,SingleDeed,School,Renovated,Ceramic,Brick,None,1350000000
+امیرکبیر,190,3,1401,5,5,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,9000000000
+امیرکبیر,195,3,1403,5,5,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,12500000000
+کمربندی شرقی,90,2,1400,5,3,Yes,Yes,Apartment,SingleDeed,School,New,Ceramic,Brick,None,2750000000
+کمربندی شرقی,57,1,1390,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,Old,Ceramic,Brick,None,1570000000
+کمربندی شرقی,93,2,1395,5,3,Yes,Yes,Apartment,SingleDeed,Park,New,Ceramic,Brick,None,2500000000
+کمربندی شرقی,80,2,1390,5,2,Yes,Yes,Apartment,SingleDeed,School,New,Ceramic,Brick,None,1720000000
+کمربندی شرقی,165,3,1403,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,6300000000
+کمربندی شرقی,70,2,1393,5,2,Yes,Yes,Apartment,SingleDeed,School,New,Ceramic,Brick,None,1950000000
+کمربندی شرقی,117,2,1400,5,2,Yes,Yes,Apartment,SingleDeed,School,New,Ceramic,Brick,None,4250000000
+کمربندی شرقی,58,1,1380,5,2,Yes,Yes,Apartment,SingleDeed,School,Old,Ceramic,Brick,None,1550000000
+کمربندی شرقی,120,3,1391,5,3,Yes,Yes,Apartment,SingleDeed,School,New,Ceramic,Brick,None,3500000000
+کمربندی شرقی,110,2,1390,5,2,Yes,Yes,Apartment,SingleDeed,School,New,Ceramic,Brick,None,2500000000
+شریعتی,90,2,1388,5,2,Yes,Yes,Apartment,SingleDeed,School,Old,Ceramic,Brick,None,2300000000
+شریعتی,80,2,1395,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2400000000
+شریعتی,145,3,1388,5,4,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,4600000000
+شریعتی,172,3,1403,5,5,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,PriceAgreed
+شریعتی,122,3,1393,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,5500000000
+شریعتی,118,2,1398,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,4900000000
+شریعتی,136,3,1397,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,4500000000
+شریعتی,190,3,1403,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,9500000000
+شریعتی,163,3,1402,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,8000000000
+شریعتی,130,2,1395,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,6450000000
+حمزه‌کلا,85,2,1386,5,2,Yes,Yes,Apartment,SingleDeed,School,Old,Ceramic,Brick,None,2000000000
+حمزه‌کلا,113,2,1403,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,4100000000
+حمزه‌کلا,90,2,1392,5,2,Yes,Yes,Apartment,SingleDeed,School,Old,Ceramic,Brick,None,2700000000
+حمزه‌کلا,70,2,1392,5,2,Yes,Yes,Apartment,SingleDeed,School,Old,Ceramic,Brick,None,2350000000
+حمزه‌کلا,92,2,1394,5,2,Yes,Yes,Apartment,SingleDeed,School,Old,Ceramic,Brick,None,2450000000
+حمزه‌کلا,101,2,1403,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,4000000000
+حمزه‌کلا,135,3,1403,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,4900000000
+حمزه‌کلا,75,2,1386,5,2,Yes,Yes,Apartment,SingleDeed,School,Old,Ceramic,Brick,None,1700000000
+حمزه‌کلا,130,3,1402,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,5000000000
+حمزه‌کلا,116,2,1403,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3750000000
+میدان کشوری,93,2,1395,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2800000000
+میدان کشوری,90,2,1390,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,1950000000
+میدان کشوری,75,2,1403,5,1,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2200000000
+میدان کشوری,200,3,1403,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,9000000000
+میدان کشوری,87,2,1395,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2000000000
+میدان کشوری,85,2,1403,5,1,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2600000000
+میدان کشوری,108,2,1403,5,5,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3800000000
+میدان کشوری,83,2,1394,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,1800000000
+میدان کشوری,136,3,1402,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3500000000
+میدان کشوری,170,3,1402,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,5100000000
+چهارراه نواب,70,2,1388,4,1,Yes,Yes,Apartment,SingleDeed,School,Old,Ceramic,Brick,None,1880000000
+چهارراه نواب,90,2,1387,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,Renovated,Ceramic,Brick,None,2700000000
+چهارراه نواب,80,2,1390,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2600000000
+چهارراه نواب,85,2,1403,5,1,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3700000000
+چهارراه نواب,90,2,1403,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3800000000
+چهارراه نواب,83,2,1394,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,1800000000
+چهارراه نواب,136,3,1402,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3500000000
+چهارراه نواب,170,3,1402,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,5100000000
+امیرکبیر,135,3,1398,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,7000000000
+امیرکبیر,75,2,1390,5,1,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2750000000
+امیرکبیر,85,2,1395,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2900000000
+کمربندی غربی,95,2,1396,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3700000000
+کمربندی غربی,110,2,1392,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3500000000
+کمربندی غربی,135,3,1398,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3950000000
+حمزه‌کلا,85,2,1393,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2700000000
+حمزه‌کلا,75,2,1389,5,1,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2000000000
+حمزه‌کلا,110,2,1398,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,5800000000
+میدان کشوری,85,2,1398,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2600000000
+میدان کشوری,75,2,1403,5,1,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2200000000
+میدان کشوری,200,3,1403,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,9000000000
+شریعتی,182,3,1395,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,7500000000
+شریعتی,95,2,1385,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2200000000
+شریعتی,117,2,1403,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,4350000000
+چهارراه نواب,70,2,1388,4,1,Yes,Yes,Apartment,SingleDeed,School,Old,Ceramic,Brick,None,1880000000
+چهارراه نواب,90,2,1387,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,Renovated,Ceramic,Brick,None,2700000000
+چهارراه نواب,80,2,1390,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,Renovated,Ceramic,Brick,None,2500000000
+موزیرج,270,2,1403,1,1,No,Yes,House,SingleDeed,School,New,Ceramic,Brick,None,Price on request
+موزیرج,110,2,1385,1,1,No,Yes,House,SingleDeed,School,Old,Ceramic,Brick,None,1250000000
+موزیرج,75,1,1392,1,1,No,Yes,House,SingleDeed,School,Old,Ceramic,Brick,None,1200000000
+کمربندی شرقی,100,2,1400,5,1,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3800000000
+کمربندی شرقی,170,3,1403,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,6000000000
+کمربندی شرقی,210,3,1401,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3050000000
+امیرکبیر,135,3,1398,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,7000000000
+امیرکبیر,75,2,1390,5,1,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2750000000
+امیرکبیر,85,2,1395,5,3,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2900000000
+کمربندی غربی,95,2,1396,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3700000000
+کمربندی غربی,110,2,1392,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3500000000
+کمربندی غربی,135,3,1398,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3950000000
+حمزه‌کلا,85,2,1393,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2700000000
+حمزه‌کلا,75,2,1389,5,1,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2000000000
+حمزه‌کلا,110,2,1398,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,5800000000
+میدان کشوری,85,2,1395,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2700000000
+میدان کشوری,75,2,1389,5,1,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2000000000
+میدان کشوری,110,2,1398,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,5800000000
+شریعتی,95,2,1396,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3700000000
+شریعتی,110,2,1392,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3500000000
+شریعتی,135,3,1398,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3950000000
+چهارراه نواب,85,2,1393,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2700000000
+چهارراه نواب,75,2,1389,5,1,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2000000000
+چهارراه نواب,110,2,1398,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,5800000000
+موزیرج,95,2,1396,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3700000000
+موزیرج,110,2,1392,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3500000000
+موزیرج,135,3,1398,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,3950000000
+کمربندی شرقی,85,2,1393,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2700000000
+کمربندی شرقی,75,2,1389,5,1,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,2000000000
+کمربندی شرقی,110,2,1398,5,2,Yes,Yes,Apartment,SingleDeed,ShoppingCenter,New,Ceramic,Brick,None,5800000000
