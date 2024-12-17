@@ -134,26 +134,26 @@ namespace HousePricePredictionAPI.Controllers
             if (houseInput.Elevator == "No")
             {
                 if (houseInput.FloorNumber == 2)
-                    finalPrice *= 0.90f; // کاهش 10 درصدی
+                    finalPrice *= 0.94f; // کاهش 6 درصدی برای طبقه دوم
                 else if (houseInput.FloorNumber == 3)
-                    finalPrice *= 0.85f; // کاهش 15 درصدی
+                    finalPrice *= 0.89f; // کاهش 11 درصدی برای طبقه سوم
                 else if (houseInput.FloorNumber >= 4)
-                    finalPrice *= 0.75f; // کاهش 25 درصدی
+                    finalPrice *= 0.85f; // کاهش 15 درصدی برای طبقه چهارم به بالا
             }
 
             // تاثیر مثبت آسانسور
             if (houseInput.Elevator == "Yes")
             {
-                finalPrice *= 1.02f; // افزایش 2 درصدی
+                finalPrice *= 1.04f; // افزایش 4 درصدی به دلیل وجود آسانسور
             }
 
             // تاثیر پارکینگ
             if (houseInput.Parking == "Yes")
             {
                 if (houseInput.Area > 150)
-                    finalPrice *= 1.03f; // افزایش 3 درصدی
+                    finalPrice *= 1.04f; // افزایش 4 درصدی برای خانه‌های بزرگ
                 else
-                    finalPrice *= 1.05f; // افزایش 5 درصدی
+                    finalPrice *= 1.06f; // افزایش 6 درصدی برای خانه‌های کوچک‌تر
             }
 
             // تاثیر مکان‌های نزدیک
@@ -161,16 +161,16 @@ namespace HousePricePredictionAPI.Controllers
             {
                 case "School":
                 case "Hospital":
-                    finalPrice *= 0.97f; // کاهش 3 درصدی
+                    finalPrice *= 0.98f; // کاهش 2 درصدی
                     break;
                 case "MainStreet":
-                    finalPrice *= 1.05f; // افزایش 5 درصدی
+                    finalPrice *= 1.08f; // افزایش 8 درصدی
                     break;
                 case "ShoppingCenter":
-                    finalPrice *= 1.04f; // افزایش 4 درصدی
+                    finalPrice *= 1.06f; // افزایش 6 درصدی
                     break;
                 case "Park":
-                    finalPrice *= 1.03f; // افزایش 3 درصدی
+                    finalPrice *= 1.04f; // افزایش 4 درصدی
                     break;
             }
 
@@ -178,13 +178,13 @@ namespace HousePricePredictionAPI.Controllers
             switch (houseInput.FacadeType)
             {
                 case "Brick":
-                    finalPrice *= 0.93f; // کاهش 7 درصدی
+                    finalPrice *= 0.96f; // کاهش 4 درصدی
                     break;
                 case "Cement":
-                    finalPrice *= 0.95f; // کاهش 5 درصدی
+                    finalPrice *= 0.97f; // کاهش 3 درصدی
                     break;
                 case "Stone":
-                    finalPrice *= 1.04f; // افزایش 4 درصدی
+                    finalPrice *= 1.05f; // افزایش 5 درصدی
                     break;
             }
 
@@ -192,13 +192,13 @@ namespace HousePricePredictionAPI.Controllers
             switch (houseInput.DocumentType)
             {
                 case "SingleDeed":
-                    finalPrice *= 1.02f; // افزایش 2 درصدی
+                    finalPrice *= 1.03f; // افزایش 3 درصدی
                     break;
                 case "Agreement":
-                    finalPrice *= 0.92f; // کاهش 8 درصدی
+                    finalPrice *= 0.94f; // کاهش 6 درصدی
                     break;
                 case "FullOwnership":
-                    finalPrice *= 1.04f; // افزایش 4 درصدی
+                    finalPrice *= 1.06f; // افزایش 6 درصدی
                     break;
             }
 
@@ -206,13 +206,13 @@ namespace HousePricePredictionAPI.Controllers
             switch (houseInput.RenovationStatus)
             {
                 case "New":
-                    finalPrice *= 1.08f; // افزایش 8 درصدی
+                    finalPrice *= 1.12f; // افزایش 12 درصدی
                     break;
                 case "Renovated":
-                    finalPrice *= 1.03f; // افزایش 3 درصدی
+                    finalPrice *= 1.04f; // افزایش 4 درصدی
                     break;
                 case "Old":
-                    finalPrice *= 0.75f; // کاهش 25 درصدی
+                    finalPrice *= 0.86f; // کاهش 14 درصدی
                     break;
             }
 
@@ -222,34 +222,31 @@ namespace HousePricePredictionAPI.Controllers
 
             if (age > 30 && houseInput.RenovationStatus == "Renovated")
             {
-                finalPrice *= 0.95f; // کاهش 5 درصدی
+                finalPrice *= 1.02f; // افزایش 2 درصدی
             }
             else if (age > 30 && houseInput.RenovationStatus == "Old")
             {
-                finalPrice *= 0.70f; // کاهش 30 درصدی
+                finalPrice *= 0.78f; // کاهش 22 درصدی
             }
 
             // تاثیر نوع کف‌پوش
             switch (houseInput.FlooringType)
             {
                 case "Ceramic":
-                    finalPrice *= 0.98f; // کاهش 2 درصدی
+                    finalPrice *= 1.016f; // افزایش 1.6 درصدی
                     break;
                 case "Parquet":
-                    finalPrice *= 1.03f; // افزایش 3 درصدی
+                    finalPrice *= 1.045f; // افزایش 4.5 درصدی
                     break;
                 case "Stone":
-                    finalPrice *= 1.02f; // افزایش 2 درصدی
+                    finalPrice *= 1.04f; // افزایش 4 درصدی
                     break;
                 case "Carpet":
-                    finalPrice *= 0.90f; // کاهش 10 درصدی
+                    finalPrice *= 0.94f; // کاهش 6 درصدی
                     break;
             }
 
             return finalPrice;
         }
-
-
-
     }
 }
