@@ -23,6 +23,38 @@ namespace HousePricePredictionAPI.Controllers
             var model = TrainModel(mlContext, env);
             _predictionEngine = mlContext.Model.CreatePredictionEngine<HouseData, HousePricePrediction>(model);
         }
+        private string GenerateAnalysis(HouseInputData houseInput, float predictedPrice)
+        {
+            var analysis = "تحلیل قیمت خانه:\n";
+
+            analysis += $"- محله: {houseInput.Neighborhood}\n";
+            analysis += $"- متراژ: {houseInput.Area} متر مربع\n";
+            analysis += $"- تعداد اتاق: {houseInput.Rooms}\n";
+            analysis += $"- سال ساخت: {houseInput.YearBuilt}\n";
+
+            if (houseInput.Elevator == "Yes")
+            {
+                analysis += "- این خانه دارای آسانسور است که باعث افزایش قیمت می‌شود.\n";
+            }
+            else
+            {
+                analysis += "- عدم وجود آسانسور ممکن است قیمت را کاهش دهد، مخصوصاً برای طبقات بالا.\n";
+            }
+
+            if (houseInput.Parking == "Yes")
+            {
+                analysis += "- وجود پارکینگ یک مزیت مهم برای این خانه محسوب می‌شود.\n";
+            }
+
+            if (houseInput.NearCenters == "MainStreet")
+            {
+                analysis += "- نزدیکی به خیابان اصلی باعث افزایش قابل توجه قیمت می‌شود.\n";
+            }
+
+            analysis += $"\nقیمت پیش‌بینی شده نهایی: {predictedPrice:N0} تومان";
+
+            return analysis;
+        }
 
         private ITransformer TrainModel(MLContext mlContext, IWebHostEnvironment env)
         {
@@ -61,10 +93,17 @@ namespace HousePricePredictionAPI.Controllers
             Summary = "Predict the price of a house",
             Description = "Provide details about the house to predict its price."
         )]
-        public ActionResult<float> Predict([FromBody] HouseInputData houseInput)
+        [HttpPost]
+        public ActionResult Predict([FromBody] HouseInputData houseInput)
         {
             var adjustedPrice = AdjustPrice(houseInput);
-            return Ok(new { PredictedPrice = $"{adjustedPrice:N0} تومان" });
+            var analysis = GenerateAnalysis(houseInput, adjustedPrice);
+
+            return Ok(new
+            {
+                PredictedPrice = $"{adjustedPrice:N0} تومان",
+                Analysis = analysis
+            });
         }
 
         private float AdjustPrice(HouseInputData houseInput)
@@ -95,26 +134,26 @@ namespace HousePricePredictionAPI.Controllers
             if (houseInput.Elevator == "No")
             {
                 if (houseInput.FloorNumber == 2)
-                    finalPrice *= 0.93f; // کاهش 7 درصدی برای طبقه دوم
+                    finalPrice *= 0.95f; // کاهش 5 درصدی برای طبقه دوم
                 else if (houseInput.FloorNumber == 3)
-                    finalPrice *= 0.88f; // کاهش 12 درصدی برای طبقه سوم
+                    finalPrice *= 0.90f; // کاهش 10 درصدی برای طبقه سوم
                 else if (houseInput.FloorNumber >= 4)
-                    finalPrice *= 0.80f; // کاهش 20 درصدی برای طبقه چهارم به بالا
+                    finalPrice *= 0.85f; // کاهش 15 درصدی برای طبقه چهارم به بالا
             }
 
-            // تاثیر مثبت آسانسور به عنوان یک مزیت مستقل
+            // تاثیر مثبت آسانسور
             if (houseInput.Elevator == "Yes")
             {
-                finalPrice *= 1.10f; // افزایش 10 درصدی به دلیل وجود آسانسور
+                finalPrice *= 1.05f; // افزایش 5 درصدی به دلیل وجود آسانسور
             }
 
             // تاثیر پارکینگ
             if (houseInput.Parking == "Yes")
             {
                 if (houseInput.Area > 150)
-                    finalPrice *= 1.07f; // افزایش 7 درصدی برای خانه‌های بزرگ
+                    finalPrice *= 1.05f; // افزایش 5 درصدی برای خانه‌های بزرگ
                 else
-                    finalPrice *= 1.12f; // افزایش 12 درصدی برای خانه‌های کوچک‌تر
+                    finalPrice *= 1.08f; // افزایش 8 درصدی برای خانه‌های کوچک‌تر
             }
 
             // تاثیر مکان‌های نزدیک
@@ -122,16 +161,16 @@ namespace HousePricePredictionAPI.Controllers
             {
                 case "School":
                 case "Hospital":
-                    finalPrice *= 0.98f;
+                    finalPrice *= 0.99f; // کاهش 1 درصدی
                     break;
                 case "MainStreet":
-                    finalPrice *= 1.20f;
+                    finalPrice *= 1.10f; // افزایش 10 درصدی
                     break;
                 case "ShoppingCenter":
-                    finalPrice *= 1.15f;
+                    finalPrice *= 1.08f; // افزایش 8 درصدی
                     break;
                 case "Park":
-                    finalPrice *= 1.10f;
+                    finalPrice *= 1.05f; // افزایش 5 درصدی
                     break;
             }
 
@@ -139,13 +178,13 @@ namespace HousePricePredictionAPI.Controllers
             switch (houseInput.FacadeType)
             {
                 case "Brick":
-                    finalPrice *= 0.95f;
+                    finalPrice *= 0.97f; // کاهش 3 درصدی
                     break;
                 case "Cement":
-                    finalPrice *= 0.97f;
+                    finalPrice *= 0.98f; // کاهش 2 درصدی
                     break;
                 case "Stone":
-                    finalPrice *= 1.12f;
+                    finalPrice *= 1.06f; // افزایش 6 درصدی
                     break;
             }
 
@@ -153,13 +192,13 @@ namespace HousePricePredictionAPI.Controllers
             switch (houseInput.DocumentType)
             {
                 case "SingleDeed":
-                    finalPrice *= 1.08f;
+                    finalPrice *= 1.04f; // افزایش 4 درصدی
                     break;
                 case "Agreement":
-                    finalPrice *= 0.90f;
+                    finalPrice *= 0.95f; // کاهش 5 درصدی
                     break;
                 case "FullOwnership":
-                    finalPrice *= 1.15f;
+                    finalPrice *= 1.08f; // افزایش 8 درصدی
                     break;
             }
 
@@ -167,13 +206,13 @@ namespace HousePricePredictionAPI.Controllers
             switch (houseInput.RenovationStatus)
             {
                 case "New":
-                    finalPrice *= 1.25f;
+                    finalPrice *= 1.15f; // افزایش 15 درصدی
                     break;
                 case "Renovated":
-                    finalPrice *= 1.10f;
+                    finalPrice *= 1.05f; // افزایش 5 درصدی
                     break;
                 case "Old":
-                    finalPrice *= 0.80f;
+                    finalPrice *= 0.85f; // کاهش 15 درصدی
                     break;
             }
 
@@ -183,27 +222,27 @@ namespace HousePricePredictionAPI.Controllers
 
             if (age > 30 && houseInput.RenovationStatus == "Renovated")
             {
-                finalPrice *= 1.05f;
+                finalPrice *= 1.03f; // افزایش 3 درصدی
             }
             else if (age > 30 && houseInput.RenovationStatus == "Old")
             {
-                finalPrice *= 0.70f;
+                finalPrice *= 0.75f; // کاهش 25 درصدی
             }
 
             // تاثیر نوع کف‌پوش
             switch (houseInput.FlooringType)
             {
                 case "Ceramic":
-                    finalPrice *= 1.03f;
+                    finalPrice *= 1.02f; // افزایش 2 درصدی
                     break;
                 case "Parquet":
-                    finalPrice *= 1.12f;
+                    finalPrice *= 1.06f; // افزایش 6 درصدی
                     break;
                 case "Stone":
-                    finalPrice *= 1.10f;
+                    finalPrice *= 1.05f; // افزایش 5 درصدی
                     break;
                 case "Carpet":
-                    finalPrice *= 0.90f;
+                    finalPrice *= 0.95f; // کاهش 5 درصدی
                     break;
             }
 
