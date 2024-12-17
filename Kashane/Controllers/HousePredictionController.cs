@@ -91,14 +91,21 @@ namespace HousePricePredictionAPI.Controllers
             var prediction = _predictionEngine.Predict(houseData);
             float finalPrice = prediction.Price;
 
-            // تاثیر آسانسور به عنوان یک مزیت مستقل
+            // تاثیر منفی طبقه در صورت نبود آسانسور
+            if (houseInput.Elevator == "No")
+            {
+                if (houseInput.FloorNumber == 2)
+                    finalPrice *= 0.93f; // کاهش 7 درصدی برای طبقه دوم
+                else if (houseInput.FloorNumber == 3)
+                    finalPrice *= 0.88f; // کاهش 12 درصدی برای طبقه سوم
+                else if (houseInput.FloorNumber >= 4)
+                    finalPrice *= 0.80f; // کاهش 20 درصدی برای طبقه چهارم به بالا
+            }
+
+            // تاثیر مثبت آسانسور به عنوان یک مزیت مستقل
             if (houseInput.Elevator == "Yes")
             {
-                finalPrice *= 1.05f; // افزایش 5 درصدی به صورت کلی برای داشتن آسانسور
-                if (houseInput.Floors > 4)
-                {
-                    finalPrice *= 1.05f; // افزایش 5 درصدی اضافی برای ساختمان‌های بلندتر
-                }
+                finalPrice *= 1.10f; // افزایش 10 درصدی به دلیل وجود آسانسور
             }
 
             // تاثیر پارکینگ
@@ -114,6 +121,7 @@ namespace HousePricePredictionAPI.Controllers
             switch (houseInput.NearCenters)
             {
                 case "School":
+                case "Hospital":
                     finalPrice *= 0.98f;
                     break;
                 case "MainStreet":
@@ -197,21 +205,6 @@ namespace HousePricePredictionAPI.Controllers
                 case "Carpet":
                     finalPrice *= 0.90f;
                     break;
-            }
-
-            // تاثیر طبقه و رابطه آن با تعداد طبقات
-            if (houseInput.Elevator == "No")
-            {
-                if (houseInput.FloorNumber == 2)
-                    finalPrice *= 0.93f; // کاهش 7 درصدی برای طبقه دوم
-                else if (houseInput.FloorNumber == 3)
-                    finalPrice *= 0.88f; // کاهش 12 درصدی برای طبقه سوم
-                else if (houseInput.FloorNumber >= 4)
-                    finalPrice *= 0.80f; // کاهش 20 درصدی برای طبقه چهارم به بالا
-            }
-            else if (houseInput.FloorNumber >= 4)
-            {
-                finalPrice *= 1.07f; // افزایش 7 درصدی برای طبقه چهارم به بالا در ساختمان‌های دارای آسانسور
             }
 
             return finalPrice;
